@@ -1,0 +1,139 @@
+<!-- Seccion 2 Experiencia -->
+
+<section>
+    <div class="row">
+        <div class="texto1">
+            <h1>Experiencia</h1> <br>  
+                <dl>
+                     <div class="texto-row">
+                            <p id="texto-gris2">
+                          <dt>
+                                <a href="https://www.argentina.gob.ar/seguridad"><img src="https://github.com/Amilcar2183/PorfolioMACV1/blob/master/img/logoMinseg2.png?raw=true" width="100" ></a> 
+                                <h2> Ministerio de Seguridad de la Nación 06.2013- Actualidad</h2>
+  
+                                 </dt> 
+                                    <br>                               
+                                 <dd><h3>Dirección de Presupuesto 016.2016-Actualidad</h3> 
+                                    <br>
+                                    <p class="texto-gris">  Diseñar, implementar y sistematizar los procesos de control presupuestarios. Desarrollar procesos administrativos. Proyectar , elaborar y controlar el presupuesto de las Fuerzas Federales y de seguridad. Asistir en la coordinación de  equipos de trabajo.  </p>
+                                                               
+                                 </dd> 
+                                    <br>
+                                 <dd><h3>Subsecretaria de Logística 06.2013-01.2016</h3>
+                                    <br>
+                                    <p class="texto-gris"> Asesorar y auditar los requerimientos logísticos e intervenir en los procedimientos de las contrataciones y adquisiciones de las Fuerzas Policiales y de Seguridad. Auditar los procesos presupuestarios, contables de gestión y de obra. Asistir en los procesos administrativos aplicables a los inmuebles asignados en administración y uso de las Fuerzas. Relevar la información respectiva al estado de avance de las contrataciones y sistematizarla a los efectos de informar a la autoridad respectiva. Articular y gestionar información en materia de contrataciones a los diversos actores de gestión, con el fin de alcanzar las metas y objetivos del área. Intervenir y gestionar la planificación anual de las contrataciones en base a los requerimientos de las Fuerzas y del plan estratégico del área. Coordinar equipos de trabajo en la ejecución de tareas de control de los procesos administrativos. </p>
+                                 </dd>
+                                    <br> 
+                            <dt> 
+                                <a href="https://www.crowe.com/ar"><img src="https://github.com/Amilcar2183/PorfolioMACV1/blob/master/img/logoCrowe.png?raw=true" width="100" alt="logoCrowe">      </a> 
+                                <div class="texto-row">
+                                <h2> Crowe Horwath Argentina 09.2009 -06.2013</h2>
+                                </div>
+                                </dt>
+                                <dd> 
+                                    <br>               
+                                    <h3>Jerarquía: Senior Sector: Auditoría Sector Público: Consultoría / Auditoría
+                                      
+                                    </h3>
+                                     <br>
+                                    <p class="texto-gris">Planificación, coordinación, asignación y seguimiento de equipos de trabajo en distintos proyectos de auditoria concurrentes. Desarrollo, planificación y seguimiento de tareas de múltiples proyectos. Desarrollo, implementación y seguimiento de procesos de control conforme a los términos de referencia de la contratación. Desarrollo, planificación y monitoreo de informes de Auditorías. Análisis y exposición de los resultados obtenidos al cliente auditado. Desarrollo de procesos de control de Bases de Datos en SQL.
+                                                                           
+                                </dd> 
+                                     <br>                                                
+                            <dt> 
+                                    <a href="https://www.buenosaires.gob.ar/jefaturadegabinete/desarrollo-urbano"><img src="https://github.com/Amilcar2183/PorfolioMACV1/blob/master/img/logoCaba2.png?raw=true" width= "100"alt="Logo Ministerio de Desarrollo Urbano">
+                                    </a>     
+                                        
+                                    <div class="texto-row">
+                                    <h2>Ministerio de Desarrollo Urbano CABA Argentina 05.2005 - 09.2009 
+                                      
+                                      </h2>
+                                     </div>                                     
+                            </dt>   
+                                <br>
+                                
+                                <dd>                        
+                                                                 
+                                  <h3>Jerarquía: Senior Sector: Administración Industria: Consultoría / Auditoría
+                                      
+                                  </h3>
+                                  
+                                    <br>
+                                    <p class="texto-gris">Relevamiento y control de sistemas y procedimientos administrativos (compra y contrataciones mediante licitación pública y privada ), planificación y formulación de informes de auditoría interna , verificación de ingresos y gastos, conciliaciones bancarias, control presupuestario, administración de Bienes Patrimoniales, cierres de ejercicios, fiscalización in situ del cumplimiento de las normas de Higiene y Seguridad en Obras Públicas. Confección del Plan anual de Auditoría. Planificación y ejecución de auditorías de obras y de gestión. Auditorías de obras in situ, relevamiento de Obras Públicas subterráneas y en superficie. </p>
+                                     
+                                </dd>
+                                <br>
+  
+                            </p>
+                              </div>
+                          <div>
+                              <p class="texto-gris">
+                                  <input id="edit-texto-gris2"  type="text" oninput="myFuction3(this.value)" style="display:none">
+                              </p>
+                          </div>      
+                  
+                    </dl>
+                  </div>
+          <div class="iconos-der">
+              <div class="iconos-der" onclick="cambiar_parrafo1 ()">
+              <a href="#"> <i class="fas fa-edit" ></i></a>
+              </div>
+          </div>
+      </div>
+  </section>
+  <script>
+ 
+    // muestra en consola el texto 
+   
+    function cambiar_parrafo1 (){
+         document.getElementById("edit-texto-gris2").style.display="block";
+         let texto = document.getElementById("texto-gris2").innerText;
+         console.log(texto);
+     }; 
+     
+     function myFuction3(valor){
+         document.getElementById("texto-gris2").innerText=valor;
+     };
+  
+      
+     function logMenssage(message) {
+         console.log(message + "<br>");
+     }
+     
+     //control al presionar el enter
+   
+     let textarea=document.getElementById("edit-texto-gris2")
+     textarea.addEventListener('keyup', (e)=> {
+         logMenssage('key "${e.key}" released [event: keyup]');
+         if (e.key=="Enter"){
+             document.getElementById("edit-texto-gris2").style.display="none" 
+         }
+     });
+     
+     //carga el contenido del archivo de texto
+     //carga contenito del parrafo
+   
+     function showFile(input){
+         let file = input.files[0];
+         alert ('File name: ${file.name}');
+         alert ('Last modified: ${file.lastModified}');
+   
+         let reader = new FileReader();
+         reader.readAsText(file);
+         reader.onload = function () {
+         console.log(reader.result);
+         document.getElementById("texto-gris2").innerText=reader.result;
+  
+           }
+   
+         reader.onerror = function () {
+             console.log (reader.error)
+         }
+     }
+  
+  </script>
+
+
+
+
+

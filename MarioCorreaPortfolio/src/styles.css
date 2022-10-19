@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    i {
+    color: rgb(22, 21, 21);
+    padding-right: 25%;
+    }
+    
+    /*nav*/
+    
+    nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(49, 49, 49);
+    padding: 10px;
+    height: 50px; 
+    }
+    
+    .logo {
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 0;
+    }
+    
+    .navlinks ul {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    }
+    
+    .navlinks li {
+    padding: 5px 10px;
+    }
+    
+    .navlinks i {
+    font-size: 30px;
+    color: rgb(133, 133, 133);
+    }
+    
+    .navlinks-iz {
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    color: white;
+    padding: 5px 10px;
+    font-size: small;
+    font-size:  10px;
+    
+    }
+    
+    
+    .boton {
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgb(0, 87, 61);
+    background-color: rgb(101, 139, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    }
+    
+    .texto-blanco{
+    text-align: left;
+    color: white;
+    }
+    
+    /*header*/
+    
+    .row {
+    display: flex;
+    justify-content: space-between;
+    }
+    
+    header {
+    width: 90%;
+    margin: 5px auto;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 20px;
+    }
+    
+    .fondo {
+    background-image: url(https://github.com/Amilcar2183/PorfolioMACV1/blob/master/img/fondo2.jpg?raw=true);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    }
+    
+    .foto-perfil {
+    position: relative;
+    bottom: 120px;
+    padding-left: 20px;
+    margin-bottom: -120px;
+    }
+    
+    .foto-perfil img {
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 50%;
+    }
+    
+    .foto-perfil i {
+    font-size: 10px;
+    color: rgb(59, 59, 59);
+    position: relative;
+    bottom: 25px;
+    }
+    
+    .header-izq {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    }
+    
+    .header-texto h1,
+    .header-texto p {
+    margin-bottom: 5px;
+    }
+    
+    .header-texto a {
+    text-decoration: none;
+    color: rgb(77, 121, 255);
+    }
+    
+    .header-botones {
+    padding: 10px 0 15px 0;
+    }
+    
+    .boton-azul {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: rgb(101, 139, 255);
+    color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+    }
+    
+    .boton-gris {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: rgb(230, 230, 230);
+    color: rgb(133, 133, 133);
+    border-radius: 5px;
+    margin-right: 5px;
+    }
+    
+    .header-der {
+    margin: auto 10px;
+    
+    
+    }
+    
+    .logos-edu {
+    align-items: center;
+    padding: 50px 50px;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex; 
+    
+    }
+    
+    .logos-edu img {
+    
+    margin-bottom: 10px;
+    width: 100px;
+    align-items: center;
+    
+    }
+    
+    /*section*/
+    
+    section {
+    width: 90%;
+    margin: auto;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    }
+    
+    section .row {
+    justify-content: space-between;
+    }
+   
+    .texto1 h1 {
+    color: #333;
+    margin-left: 2.5%;
+    font-weight: 900; ;
+    }
+    
+    .texto-gris {
+      color: rgb(170, 170, 170);
+      font-weight: 600;
+      font-size: 20px;
+      margin-left: 10%;
+      text-align: justify;
+      }
+     
+      #texto-gris1 {
+        color: rgb(170, 170, 170);
+        font-weight: 600;
+        font-size: 20px;
+        margin-left: inherit;
+        text-align: justify;
+        }
+    
+    .experiencia {
+    display: flex;
+    }
+  
+    
+    .texto2 h1 {
+    margin-bottom: 20px;
+    color: #333;
+    }
+    
+    .texto2 img {
+    width: 50px;
+    height: auto;
+    }
+    
+    .texto-row {
+    padding: 0 20px;
+    }
+    
+    .texto-row h2 {
+    margin-bottom: 10px;
+    color: #333;
+    align-items: center;
+    }
+    
+    .texto-chico {
+    font-size: 10px;
+    margin-bottom: 10px;
+    }
+    
+    dt {
+      align-items: center;
+      display: flex;
+    
+    }
+    
+    .fa-plus {
+    display: block;
+    margin-left: 33px;
+    margin-bottom: 10px;
+    }
+    
+    .iconos-der{
+    display: inline-flex;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    }
+    
+    @media (max-width: 800px) {
+    header,
+    section {
+      width: 90%;
+      margin: 10px auto;
+    }
+    
+    .header-izq {
+      width: 90%;
+      margin: auto;
+    }
+    
+    .boton-gris,
+    .boton-azul {
+      width: 100%;
+      margin: auto;
+    }
+    
+    header .row {
+      flex-direction: column;
+    }
+    
+    .logos-edu {
+      display: none;
+    }
+    
+    .fondo {
+      height: 300px;
+    }
+    
+    .header-botones {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .header-botones a {
+      margin-bottom: 10px;
+    }
+    }
+    /* Seccion habilidades*/
+    .contenedor {
+      top: 30%;
+      left:50%;
+      position: relative;
+      text-align: center;
+    
+      /* transform: translate(-50%, -50%);*/
+      display: flex 
+    }
+    
+    /* Apply css properties to ui-widgets class */
+    .ui-widgets {
+      position: relative;
+      display: inline-block;
+      width: 10rem;
+      height: 10rem;
+      border-radius: 9rem;
+      margin:1.5rem;
+      border: 1.2rem solid rgb(243, 248, 243);
+      box-shadow: inset 0 0 7px grey;
+      border-left-color: palegreen;
+      border-top-color:chartreuse ;
+      border-right-color: darkgreen;
+      border-bottom-color: white ;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    
+    /* Apply css properties to the second
+      child of ui-widgets class */
+    
+    .ui-widgets:nth-child(3) {
+      border-top-color:chartreuse (255, 0, 149) ;
+      border-right-color: white;
+      border-left-color: palegreen;
+      border-bottom-color: white;
+    }
+    
+    .ui-widgets:nth-child(4) {
+      border-top-color:chartreuse (255, 0, 149) ;
+      border-right-color: white;
+      border-left-color: palegreen;
+      border-bottom-color: white;
+    }
+    
+    .ui-widgets:nth-child(6) {
+      border-top-color:chartreuse (255, 0, 149) ;
+      border-right-color: white;
+      border-left-color: palegreen;
+      border-bottom-color: white;
+    }
+    
+    
+    
+    /* Apply css properties to ui-widgets
+     class and ui-values class */
+    .ui-widgets .ui-values {
+      top: 40px;
+      position: absolute;
+      left: 10px;
+      right: 0;
+      font-weight: 700;
+      font-size: 2.0rem;
+    }
+    
+    /*  Apply css properties to ui-widgets 
+    class and ui-labels class */
+    .ui-widgets .ui-labels {
+      left: 0;
+      bottom: -20px;
+      text-shadow: 0 0 4px grey;
+      color:black;
+      position: absolute;
+      width: 100%;
+      font-size: 16px;
+    }
+    
+    
+    
+     
+  

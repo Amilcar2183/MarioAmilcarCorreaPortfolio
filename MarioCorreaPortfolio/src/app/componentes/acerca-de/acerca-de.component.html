@@ -1,0 +1,82 @@
+<!-- Seccion 1 Acerca de-->
+
+<section>
+    <div class="row">
+        <div class="texto1">
+            <h1>Acerca de...</h1> <br>
+            <div class="texto-row">
+                         <p id="texto-gris1"> Soy un profesional que busco el conocimiento, entendiendome en el continuo aprendisaje. Cuento con experiencia en el desarrollo de sistemas y procesos de control administrativos. Asimismo poseo experiencia en la conducción de equipos de trabajo. Y me caracterizo por adaptarme facilmente a los cambios de entorno.<br> En la actualidad, soy estudiante de Argentina Programa y maestrando de la Universidad de Buenos Aires.</p> <br>
+                    <div>
+                        <p class="texto-gris">
+                            <input id="edit-texto-gris1"  type="text" oninput="myFuction2(this.value)" style="display:none">
+                        </p>
+                    </div>
+            </div>  
+        </div>
+        <div class="iconos-der" onclick="cambiar_parrafo()">
+            <a href="#"><i class="fas fa-edit" ></i> </a>
+        </div>    
+         
+    </div>
+    <div>
+        
+        <input type="file" id="file1" onchange="showFile(this)">
+         
+    </div>
+  
+   
+  </section>
+  
+<script>
+ 
+    // muestra en consola el texto 
+   
+    function cambiar_parrafo (){
+         document.getElementById("edit-texto-gris1").style.display="block";
+         let texto = document.getElementById("texto-gris1").innerText;
+         console.log(texto);
+     }; 
+     
+     function myFuction2(valor){
+         document.getElementById("texto-gris1").innerText=valor;
+     };
+  
+      
+     function logMenssage(message) {
+         console.log(message + "<br>");
+     }
+     
+     //control al presionar el enter
+   
+     let texttarea=document.getElementById("edit-texto-gris1")
+     textarea.addEventListener('keyup', (e)=> {
+         logMenssage('key "${e.key}" released [event: keyup]');
+         if (e.key=="Enter"){
+             document.getElementById("edit-texto-gris1").style.display="none" 
+         }
+     });
+     
+     //carga el contenido del archivo de texto
+     //carga contenito del parrafo
+   
+     function showFile(input){
+         let file = input.files[0];
+         alert ('File name: ${file.name}');
+         alert ('Last modified: ${file.lastModified}');
+   
+         let reader = new FileReader();
+         reader.readAsText(file);
+         reader.onload = function () {
+         console.log(reader.result);
+         document.getElementById("texto-gris1").innerText=reader.result;
+  
+           }
+   
+         reader.onerror = function () {
+             console.log (reader.error)
+         }
+     }
+  
+  </script>
+  
+  
